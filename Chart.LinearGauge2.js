@@ -147,7 +147,7 @@
             helpers.extend(this, newProps);
             this.initialize();
         },
-        render: function() {
+        draw: function() {
             var ctx = this.ctx;
             ctx.textBaseline = "alphabetic";
             ctx.textAlign = "start";
@@ -870,7 +870,7 @@
             this.datasets.shift();
             this.update();
         },
-        render: function(ease) {
+        draw: function(ease) {
             var self = this;
             var easingDecimal = ease || 1;
             this.clear();
